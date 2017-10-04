@@ -1,5 +1,6 @@
 package com.example.falcon_ab.youtubesa.activities;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
@@ -38,6 +39,9 @@ public class ActivitySplash extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
+            Intent intent = new Intent(getApplicationContext(), ActivityHome.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.open_next, R.anim.close_main);
         }
     }
 
