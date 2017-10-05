@@ -1,4 +1,4 @@
-package adapter;
+package com.example.falcon_ab.youtubesa.adapter;
 
 import android.animation.Animator;
 import android.content.Context;
@@ -20,8 +20,8 @@ import com.marshalchen.ultimaterecyclerview.animators.internal.ViewHelper;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import utils.MySingleton;
-import utils.Utils;
+import com.example.falcon_ab.youtubesa.utils.MySingleton;
+import com.example.falcon_ab.youtubesa.utils.Utils;
 
 
 public class AdapterList extends UltimateViewAdapter<RecyclerView.ViewHolder> {

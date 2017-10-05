@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.falcon_ab.youtubesa.activities.ActivityHome">
 
-    <include layout="@layout/toolbar"/>
+    <include layout="@layout/toolbar" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -20,7 +20,14 @@
             android:layout_height="match_parent"
             android:id="@+id/frame_container">
 
+            <fragment
+                android:id="@+id/video_fragment_container"
+                android:name="com.example.falcon_ab.youtubesa.fragment.FragmentVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
             <FrameLayout
+                android:layout_below="@id/video_fragment_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/fragment_container">
